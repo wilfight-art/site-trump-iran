@@ -1,0 +1,110 @@
+/* Import d'une police moderne */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #0f172a, #1e3a8a, #312e81);
+    color: white;
+    text-align: center;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #e0f2fe;
+    margin: 0 25px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #38bdf8;
+    transform: scale(1.1);
+}
+
+/* TITRES */
+h1 {
+    font-size: 3em;
+    margin-top: 40px;
+    text-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+/* TEXTE */
+p {
+    font-size: 1.4em;
+    width: 65%;
+    margin: 20px auto;
+    line-height: 1.6;
+}
+
+/* IMAGE */
+img {
+    width: 60%;
+    margin-top: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(56,189,248,0.3);
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+/* VIDEO */
+iframe {
+    margin-top: 30px;
+    width: 70%;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(56,189,248,0.3);
+}
+
+/* CARTES */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    margin: 30px auto;
+    padding: 20px;
+    width: 70%;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    backdrop-filter: blur(8px);
+}
+
+/* BOUTON */
+.btn {
+    display: inline-block;
+    margin: 30px;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: #38bdf8;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* ANIMATION FADE */
+.fade {
+    animation: fadeIn 1.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
